@@ -1,6 +1,7 @@
 ﻿// Copyright (c) .NET Foundation. All rights reserved.
 // Licensed under the Apache License, Version 2.0. See License.txt in the project root for license information.
 
+using System;
 using Microsoft.AspNetCore.Builder;
 using Microsoft.AspNetCore.Hosting;
 using Microsoft.AspNetCore.Http;
@@ -19,7 +20,7 @@ namespace SampleDestination
         public void Configure(IApplicationBuilder app, IHostingEnvironment env)
         {
             app.UseCors(policy => policy
-                .WithOrigins("http://origin.example.com:5001")
+                .WithOrigins("http://localhost:5001")
                 .WithMethods("PUT")
                 .WithHeaders("Cache-Control"));
 

@@ -13,7 +13,7 @@ namespace SampleOrigin
         {
             var host = new WebHostBuilder()
                 .UseKestrel()
-                .UseUrls("http://*:5001")
+                .UseUrls("http://localhost:5001")
                 .UseContentRoot(Directory.GetCurrentDirectory())
                 .ConfigureLogging(factory => factory.AddConsole())
                 .UseStartup<Startup>()

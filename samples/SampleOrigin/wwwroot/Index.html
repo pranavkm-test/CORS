@@ -38,7 +38,7 @@
         // Make the CORS request.
         function makeCORSRequest(method, headerName, headerValue) {
             // Destination server with CORS enabled.
-            var url = 'http://destination.example.com:5000/';
+            var url = 'http://localhost:5000/';
             var request = new XMLHttpRequest();
             request.open(method, url, true);
             if (headerName && headerValue) {
